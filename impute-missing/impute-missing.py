@@ -6,7 +6,7 @@ def impute_missing(X, strategy='mean'):
     """
     # Write code here
     X = np.array(X, dtype =float)
-    value=0
+    
     if strategy=='mean':
         value = np.nanmean(X, axis = 0, keepdims = True)
     elif strategy=='median':
